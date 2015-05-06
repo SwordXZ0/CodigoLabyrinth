@@ -1,0 +1,16 @@
+[23-Apr-2015 17:59:02 UTC] PHP Fatal error:  Uncaught exception 'RedBeanPHP\RedException' with message 'Identifier does not conform to RedBeanPHP security policies.' in /home/ancestra/public_html/Labyrinth/Frameworks/rb.php:4803
+Stack trace:
+#0 /home/ancestra/public_html/Labyrinth/Frameworks/rb.php(4869): RedBeanPHP\QueryWriter\AQueryWriter->check('name='das'')
+#1 /home/ancestra/public_html/Labyrinth/Frameworks/rb.php(4967): RedBeanPHP\QueryWriter\AQueryWriter->esc('name='das'')
+#2 /home/ancestra/public_html/Labyrinth/Frameworks/rb.php(6962): RedBeanPHP\QueryWriter\AQueryWriter->queryRecord('name='das'', Array, ' LIMIT 1 ', Array)
+#3 /home/ancestra/public_html/Labyrinth/Frameworks/rb.php(8026): RedBeanPHP\Repository->find('name='das'', Array, ' LIMIT 1 ', Array)
+#4 /home/ancestra/public_html/Labyrinth/Frameworks/rb.php(8454): RedBeanPHP\OODB->find('name='das'', Array, ' LIMIT 1 ', Array)
+#5 /home/ancestra/public_html/Labyrinth/Frameworks/rb.php(8494): RedBeanPHP\Finder->find('name='das'', ' LIMIT 1 ', Array)
+#6 /home/ancestra/public_html/Labyrinth/Frame in /home/ancestra/public_html/Labyrinth/Frameworks/rb.php on line 4803
+[23-Apr-2015 18:00:48 UTC] PHP Fatal error:  Uncaught exception 'RedBeanPHP\RedException' with message 'OODB Store requires a bean, got: NULL' in /home/ancestra/public_html/Labyrinth/Frameworks/rb.php:7839
+Stack trace:
+#0 /home/ancestra/public_html/Labyrinth/Frameworks/rb.php(8084): RedBeanPHP\OODB->unboxIfNeeded(NULL)
+#1 /home/ancestra/public_html/Labyrinth/Frameworks/rb.php(10328): RedBeanPHP\OODB->store(NULL)
+#2 /home/ancestra/public_html/Labyrinth/Services/signup.php(15): RedBeanPHP\Facade::store(NULL)
+#3 {main}
+  thrown in /home/ancestra/public_html/Labyrinth/Frameworks/rb.php on line 7839
